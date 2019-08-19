@@ -1,0 +1,264 @@
+*{
+    font-size: 14px;
+    font-family: Arial,Helvetica,sans-serif;
+}
+html, body {
+    width: 100%; padding: 0; margin: 0;
+    font-family: Arial,Helvetica,sans-serif;
+}
+
+body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+html {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+caption, th, td {
+    text-align: left;
+    font-weight: normal;
+    vertical-align: middle;
+}
+
+q, blockquote {
+    quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none;
+}
+
+a img {
+    border: none;
+}
+* a{
+    font-size: 14px;
+    text-decoration: none;
+    color: #666;
+    cursor: pointer;
+    font-style: normal;
+}
+* a:hover{
+    text-decoration: none;
+    transition: .3s;
+}
+* a, h1, h2, h3, h4, h5, h6, p, span{
+    color: #666;
+}
+* button, button:focus, a , a:focus{
+    outline: none;
+}
+button{
+    cursor: pointer;
+}
+* h2{
+    font-style: normal;
+    line-height: normal;
+    font-size: 24px;
+}
+
+article, aside, details, figcaption, figure, footer, header, main, menu, nav, section, summary {
+    display: block;
+}
+
+/*----------------header style---------------------*/
+
+.top-header{
+    background: #379D46;
+    background: -moz-linear-gradient(top, #379D46 0%, #2C9B24 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#379D46), color-stop(100%,#2C9B24));
+    background: -webkit-linear-gradient(top, #379D46 0%,#2C9B24 100%);
+    -webkit-transition: .1s linear;
+    transition: .1s linear;
+}
+.container-block{
+    max-width: 1250px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.top-nav-list{
+    display: flex;
+    align-items: center;
+}
+.top-nav-item{
+    margin: 0 20px 0 0;
+}
+.top-nav-link{
+    color: #fff;
+    line-height: 46px;
+    text-decoration: none;
+    border-bottom: 1px solid hsla(0,0%,100%,.5);
+}
+.top-nav-link:hover{
+    color: #e31e25;
+    border-bottom-color: transparent;
+}
+.auth-block{
+    display: flex;
+    margin: 0 35px 0 10px;
+    box-sizing: border-box;
+    align-items: center;
+}
+.auth-block a,
+.auth-block span{
+    color: #e31e25;
+    text-align: center;
+    text-decoration: none;
+    line-height: normal;
+}
+.auth-block span{
+    margin: 0 3px;
+}
+.auth-block a{
+    border-bottom: 1px dotted #e31e25;
+}
+.auth-block a:hover{
+    color: #fff;
+    border: none;
+}
+.logo{
+    margin: 0 20px 0 0;
+}
+.logo h1{
+    margin: 0 5px;
+    width: 240px;
+    height: 73px;
+}
+.logo h1 a {
+    display: block;
+    width: 240px;
+    height: 100px;
+}
+.logo-link img {
+    width: 100%;
+}
+.bottom-header-left-content{
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+}
+.bottom-header{
+    box-shadow: 0 3px 10px 1px rgba(0,0,0,.2);
+}
+.top-search-block{
+    display: flex;
+    max-width: 490px;
+    width: 100%;
+    position: relative;
+}
+.form__search-exit{
+    position: absolute;
+    top: 10px;
+    right: 250px;
+    width: 20px;
+    height: 20px;
+    z-index: 997;
+    background: url("../image/krestik-off.png");
+    cursor: pointer;
+    background-size: 100%;
+    display: block;
+}
+.form__search-exit:hover{
+    top: 10px;
+    right: 250px;
+    width: 20px;
+    height: 20px;
+    z-index: 997;
+    background: url("../image/krestik-off-hover.png");
+    cursor: pointer;
+    background-size: 100%;
+    display: block;
+}
+.top-search-block .form__search-exit {
+    right: 36px;
+    top: 12px;
+    width: 16px;
+    height: 16px;
+}
+.top-search-block .request_small_form {
+    background: transparent url("../image/lupa.png") no-repeat;
+    content: "";
+    display: block;
+    height: 30px;
+    position: absolute;
+    background-position: center;
+    right: 7px;
+    top: 5px;
+    width: 30px;
+    cursor: pointer;
+}
+.top-search-block .request_small_form:hover{
+    background: transparent url("../image/hover-lupa.png") no-repeat;
+    content: "";
+    display: block;
+    height: 30px;
+    position: absolute;
+    background-position: center;
+    right: 7px;
+    top: 5px;
+    width: 30px;
+    cursor: pointer;
+}
+.search-input{
+    font-size: 16px;
+    height: 40px;
+    padding: 0 75px 0 10px;
+    vertical-align: middle;
+    outline: none;
+    background: #fff;
+    border: 1px solid #ccc;
+    font-family: Arial,Helvetica,sans-serif;
+    -webkit-transition: all .15s ease-in-out;
+    transition: all .15s ease-in-out;
+    color: #000;
+}
+.search-input:focus, .search-input:hover {
+    border-color: #999;
+}
+.call-item a{
+    font-weight: 700;
+    text-decoration: none;
+    color: #379D46;
+    font-size: 24px;
+    line-height: inherit;
+}
+.call-list{
+    margin-left: 20px;
+}
+.contact-header{
+    display: flex;
+    align-items: center;
+}
+.contact-and-time{
+    margin-left: 20px;
+}
