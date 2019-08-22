@@ -796,3 +796,52 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 .item-benefit:last-child{
     margin-right: 0;
 }
+.center-footer{
+    background-color: #379D46;
+    overflow: hidden;
+    padding: 21px 0 46px;
+}
+.footer-list{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.title-footer-item{
+    text-transform: uppercase;
+    color: #fff;
+    margin: 25px 0 20px;
+    font-size: 16px;
+}
+.footer-link{
+    color: #fff;
+    line-height: 26px;
+    text-decoration: none;
+    font-size: 16px;
+}
+.footer-link:hover{
+    color: #e31e25;
+}
+.link-pay-card{
+    display: block;
+}
+.visa{
+    background: url("../image/visa.png") no-repeat;
+    width: 47px;
+    height: 31px;
+    background-size: contain;
+}
+.master-card{
+    background: url("../image/master-card.png") no-repeat;
+    width: 47px;
+    height: 31px;
+    background-size: contain;
+}
+.pay-sposob{
+    display: flex;
+}
+.link-pay-card{
+    margin-right: 15px;
+}
+.link-pay-card:last-child{
+    margin-right: 0;
+}
