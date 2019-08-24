@@ -292,6 +292,72 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     display: flex;
     align-items: center;
 }
+.sign-in-site{
+    font-size: 12px;
+    line-height: 15px;
+    display: flex;
+    text-align: right;
+    margin-right: 4px;
+    font-weight: 600;
+}
+.sign-in-site p{
+    color: #000;
+    position: relative;
+    padding-right: 52px;
+}
+.sign-in-site p:before{
+    content: '';
+    position: absolute;
+    width: 46px;
+    height: 45px;
+    background: url("../image/user.png")no-repeat;
+    background-size: contain;
+    right: 0;
+}
+.search-form{
+    display: none;
+}
+.news a{
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 900;
+    color: #379D46;
+}
+.news a:hover{
+    text-decoration: none;
+}
+.news span{
+    font-size: 16px;
+}
+.scroll-info-basket{
+    display: none;
+}
+#menu.fixed {
+    position:fixed;
+    top:0; left:0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 1000000000;
+}
+.fixed  .scroll-info-basket{
+    display: block;
+}
+.fixed .search-form{
+    display: block;
+}
+.fixed .short-card{
+    display: none;
+}
+.fixed .news{
+    display: none;
+}
+.active-header{
+    padding-top: 148px;
+}
+.noneBlock{
+    display: none;
+}
 .header-basket-count{
     line-height: 21px;
     text-align: left;
@@ -571,7 +637,7 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 }
 .product-count-wrapper{
     line-height: 37px;
-    height: 40px;
+    height: 38px;
     width: 67px;
     display: flex;
     border: 1px solid #ccc;
@@ -640,6 +706,7 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     background: #e31e25;
     color: #fff;
     position: relative;
+    margin-left: 3px;
 }
 .add-btn:hover {
     background: #c71c22;
@@ -763,7 +830,66 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     color: #a7a7a7;
     font-size: 25px;
 }
-
+.title-form-info{
+    font: 400 24px Arial,Helvetica,sans-serif;
+    color: #000;
+    margin-bottom: 15px;
+}
+.sub-title-form{
+    margin-bottom: 20px;
+    line-height: normal;
+}
+.politic-info{
+    margin-top: 20px;
+}
+.politic-info,
+.politic-info a{
+    font-size: 12px;
+}
+.politic-info a{
+    text-decoration: underline;
+}
+.politic-info a:hover{
+    text-decoration: none;
+}
+.input-form-info{
+    font-size: 16px;
+    height: 40px;
+    padding: 0 10px;
+    vertical-align: middle;
+    outline: none;
+    background: #fff;
+    border: 1px solid #ccc;
+    font-family: Arial,Helvetica,sans-serif;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.btn-info{
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    color: #fff;
+    background-color: #379D46;
+}
+.wrapper-left-container-form{
+    margin: 0 5px;
+}
+.btn-info:hover{
+    background-color: #2b7e38;
+}
+.item-recomend{
+    margin: 30px 0;
+}
+.item-recomend{
+    max-height: 270px;
+    max-width: 240px;
+    width: 100%;
+    overflow: hidden;
+}
+.link-recomend img{
+    max-width: 100%;
+    max-height: 100%;
+}
 /*-----------------footer----------------*/
 
 .top-footer{
@@ -777,12 +903,12 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 }
 .title-benefit{
     font-size: 20px;
-    color: #000;
+    color: #fff;
 }
 .info-benefit{
     font-size: 16px;
     margin: 20px 0 0;
-    color: #000;
+    color: #fff;
     line-height: normal;
 }
 .list-benefit{
@@ -844,4 +970,114 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 }
 .link-pay-card:last-child{
     margin-right: 0;
+}
+.yandex-comment{
+    width: 80px;
+    height: 45px;
+    background: url("../image/yan.png")no-repeat;
+    background-size: contain;
+    display: block;
+}
+.comment span,
+.service span{
+    color: #fff;
+    position: relative;
+    padding-left: 36px;
+    white-space: pre-wrap;
+}
+.comment span:before{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 35px;
+    background: url("../image/comment.png")no-repeat;
+    background-size: contain;
+    left: 0;
+}
+.service span:before{
+     content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background: url("../image/service.png")no-repeat;
+    background-size: contain;
+    left: 0;
+}
+.service{
+    margin-top: 15px;
+    display: block;
+}
+.sub-footer-item p{
+    color: #fff;
+    line-height: 27px;
+}
+.bottom-footer{
+    background-color: #000;
+    padding: 20px 0;
+}
+.social-list{
+    display: flex;
+    margin-top: 10px;
+    align-self: flex-end;
+}
+.social-link{
+    display: block;
+    width: 30px;
+    height: 30px;
+    opacity: 0.4;
+}
+.social-item{
+    margin-right: 15px;
+}
+.social-item:last-child{
+    margin-right: 0;
+}
+.facebook{
+    background: url("../image/fb.png")no-repeat;
+    background-size: contain;
+}
+.twitter{
+     background: url("../image/tw.png")no-repeat;
+    background-size: contain;
+}
+.instagram{
+     background: url("../image/in.png")no-repeat;
+    background-size: contain;
+}
+.vkontakte{
+    background: url("../image/vk.png")no-repeat;
+    background-size: contain;
+}
+.odnoklasniki{
+    background: url("../image/od.png")no-repeat;
+    background-size: contain;
+}
+.social-link:hover{
+    opacity: 0.6;
+}
+.social{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.text-footer-bottom a{
+    text-decoration: underline;
+}
+.text-footer-bottom a:hover{
+    color: #666666;
+    text-decoration: none;
+}
+.text-footer-bottom p{
+    line-height: normal;
+}
+.footer-container{
+    flex-wrap: wrap;
+}
+.text-footer-bottom{
+    max-width: 60%;
+    margin-top: 15px;
+}
+.text-footer-bottom p,
+.text-footer-bottom p a{
+    font-size: 12px;
 }

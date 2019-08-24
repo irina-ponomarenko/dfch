@@ -16,4 +16,18 @@ $(document).ready(function () {
         $input.change();
         return false;
     });
+
+    /*-----------------fixed menu-------------------*/
+
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 1){
+            $('#menu').addClass("fixed");
+            $('body').addClass("active-header");
+            $('.top-header').addClass("noneBlock");
+        } else{
+            $('#menu').removeClass("fixed");
+            $('body').removeClass("active-header");
+            $('.top-header').removeClass("noneBlock");
+        }
+    });
 });
