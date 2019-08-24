@@ -32,4 +32,16 @@ $(document).ready(function () {
             $('.top-header').removeClass("noneBlock");
         }
     });
+
+    /*---------------catalog-open--------------*/
+
+    $('.catalog-open-link').on('click', function (e) {
+        e.preventDefault();
+       $(this).closest('.catalog-drop-down').find('.left-navigation').slideToggle(500);
+       $('.catalog-drop-down').toggleClass('btn-active');
+    });
+
+    $('.header-input-block').on('click',function () {
+       $(this).closest('.item-filters').find('.list-filters-input').slideToggle('fast');
+    });
 });
