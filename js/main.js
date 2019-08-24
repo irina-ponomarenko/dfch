@@ -1,5 +1,7 @@
 $(document).ready(function () {
-
+    $('.jcarousel').jcarouselAutoscroll({
+        target: '+=1'
+    });
     /*-----------------counter------------------*/
 
     $('.to-bottom').on('click', function () {
