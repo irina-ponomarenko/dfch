@@ -1361,3 +1361,38 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 .breadcrumbs-separator{
     color: #ccc;
 }
+.sort-name,
+.sort-name span{
+    color: #000;
+}
+.wrapper-sort-catalog{
+    margin: 20px 0;
+}
+.subdivision-select{
+    width: 220px;
+    min-height: 25px;
+    height: inherit!important;
+    padding: 3px 24px 3px 8px;
+    border: 1px solid #ccc;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    margin-left: 10px;
+    background-image: url("../image/tags__i.png");
+    background-position: right 6px top 10px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    text-indent: .01px;
+    -webkit-appearance: none;
+    outline: none;
+}
+.sort{
+    display: flex;
+    align-items: center;
+}
+.sort-item:first-child{
+    margin-right: 20px;
+}
+.sorting-link{
+    color: #999;
+    cursor: pointer;
+}
