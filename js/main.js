@@ -81,4 +81,6 @@ $(document).ready(function () {
         $(this).closest('.wrapper-sort-catalog').find('.list-catalog-sort').addClass('display-inline');
         $(this).closest('.wrapper-sort-catalog').find('.container-card').addClass('sort-block-li')
     });
+
+
 });
