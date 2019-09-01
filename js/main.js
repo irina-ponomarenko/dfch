@@ -105,4 +105,22 @@ $(document).ready(function () {
         $("#"+tab_id).addClass('current-link');
     });
 
+
+    /*-----------------mobile-menu----------*/
+    if ( $(window).width() < 728 ) {
+        $(".wrapper-content-all").addClass("mobile");
+
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 1){
+                $('#menu').removeClass("fixed");
+                $('body').removeClass("active-header");
+                $('.top-header').removeClass("noneBlock");
+            } else{
+                $('#menu').removeClass("fixed");
+                $('body').removeClass("active-header");
+                $('.top-header').removeClass("noneBlock");
+            }
+        });
+    }
+
 });
