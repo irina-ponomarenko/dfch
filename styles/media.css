@@ -1,0 +1,25 @@
+@media screen and (max-width: 600px){
+	.basket-table{
+		border: 0;
+	}
+	.basket-table thead{
+		display: none;
+	}
+	.basket-table tr{
+		margin-bottom: 10px;
+		display: block;
+		border-bottom: 2px solid #ddd;
+	}
+	.basket-table td{
+		display: block;
+		border-bottom: 1px dotted #ccc;
+		text-align: right;
+	}
+	.basket-table td:last-child{
+		border-bottom: 0;
+	}
+	.basket-table td:before{
+		content: attr(data-label);
+		float: left;
+	}
+}

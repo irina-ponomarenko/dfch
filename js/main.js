@@ -82,5 +82,27 @@ $(document).ready(function () {
         $(this).closest('.wrapper-sort-catalog').find('.container-card').addClass('sort-block-li')
     });
 
+    /*---------tabs----------*/
+
+
+    $('ul.tabs li').click(function(){
+        let tab_id = $(this).attr('data-tab');
+
+        $('ul.tabs li').removeClass('current');
+        $('.tab-content').removeClass('current');
+
+        $(this).addClass('current');
+        $("#"+tab_id).addClass('current');
+    });
+
+    $('ul.tabs-choose li').click(function(){
+        let tab_id = $(this).attr('data-tab');
+
+        $('ul.tabs-choose li').removeClass('current-link');
+        $('.tabs-content-choose').removeClass('current-link');
+
+        $(this).addClass('current-link');
+        $("#"+tab_id).addClass('current-link');
+    });
 
 });
