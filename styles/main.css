@@ -2960,3 +2960,6 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 .top-header-mobile{
     display: none;
 }
+.mobile-btn-menu{
+    display: none;
+}

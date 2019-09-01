@@ -23,7 +23,20 @@
 		float: left;
 	}
 }
-@media screen and (max-width: 728px){
+@media screen and (max-width: 768px){
+	#menu.fixed {
+		position:inherit;
+		top:0; left:0;
+		width: 100%;
+		background-color: #fff;
+		z-index: 1000000000;
+	}
+	.fixed  .scroll-info-basket{
+		display: none;
+	}
+	.fixed .search-form{
+		display: none;
+	}
 	.top-header .top-header-nav,
 	.top-header .right-content-top-nav{
 		display: none;
@@ -32,7 +45,7 @@
 		display: flex;
 	}
 	.mobile-menu{
-		display: flex;
+		display: none;
 		flex-direction: column-reverse;
 		justify-content: flex-end;
 		background-color: #379D46;
@@ -40,7 +53,8 @@
 		left: 0;
 		z-index: 1000000000;
 		padding: 40px;
-		width: 80%;
+		width: 54%;
+		flex: 1 0 auto;
 	}
 	.mobile-menu .top-header-nav .top-nav-list{
 		display: flex;
@@ -63,6 +77,9 @@
 	.mobile .contact-header{
 		display: none;
 	}
+	.content-all{
+		width: 100%;
+	}
 	.top-header-mobile{
 		display: flex;
 		justify-content: space-between;
@@ -70,7 +87,88 @@
 		padding: 15px;
 		background-color: #379D46;
 	}
-	.contact-info{
+	.contact-info,
+	.contact-info a,
+	.contact-info a span{
 		color: #fff;
 	}
+	.mobile-btn-menu{
+		display: block;
+		width: 35px;
+		height: 35px;
+		margin: 0 15px;
+		background: url("../image/menu-btn-mob.png")no-repeat;
+		background-size: contain;
+		background-position: center;
+		border: none;
+		cursor: pointer;
+	}
+	.active-menu-mobile{
+		overflow-x: hidden;
+	}
+	.active-menu-mobile .mobile-btn-menu{
+		width: 30px;
+		height: 30px;
+		margin: 0 15px;
+		background: url("../image/close-menu.png")no-repeat;
+		background-size: contain;
+		background-position: center;
+	}
+	.mobile .bottom-header-left-content{
+		width: auto;
+	}
+	.basket-header{
+		width: 46px;
+		padding: 10px;
+		border-left: 0;
+	}
+	.logo h1 a {
+		display: block;
+		width: 200px;
+		height: 60px;
+	}
+	.logo h1 {
+		margin: 0 5px;
+		width: 200px;
+		height: 57px;
+	}
+	.header-basket-count{
+		display: none;
+	}
+	.logo {
+		margin: 0;
+	}
+	.list-benefit,
+	.footer-list{
+		flex-wrap: wrap;
+	}
+	.center-footer {
+		padding: 21px 10px 37px;
+	}
+	.politic{
+		margin: 0 auto;
+		text-align: center;
+	}
+	.social{
+		flex-direction: column;
+	}
+	.social-list{
+		align-self: center;
+	}
+	.text-footer-bottom {
+		max-width: 100%;
+		margin: 15px;
+		text-align: center;
+	}
+	.item-benefit:nth-child(3){
+		margin-right: 0;
+	}
+	.item-footer{
+		margin-right: 20px;
+	}
+	.item-footer:last-child,
+	.item-footer:nth-child(4){
+		margin-right: 0;
+	}
+
 }
