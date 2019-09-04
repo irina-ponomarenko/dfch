@@ -1410,7 +1410,7 @@
 }
 @media screen and (max-width: 360px){
 	.jcarousel li {
-		width: 322px !important;
+		width: 325px !important;
 	}
 	.text-about {
 		font-size: 11px;
