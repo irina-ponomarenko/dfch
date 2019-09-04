@@ -1448,6 +1448,10 @@
 	.yandex-comment{
 		margin: 0 auto;
 	}
+	.jcarousel-control-prev, .jcarousel-control-next {
+		width: 30px;
+		height: 30px;
+	}
 }
 @media screen and (max-width: 340px){
 	.jcarousel li {
