@@ -287,6 +287,19 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     height: 50px;
     background: url("../image/basket.png") no-repeat;
     background-position: center;
+    position: relative;
+}
+.added-tovar{
+    color: #fff;
+    background-color: #e31e25;
+    border-radius: 100%;
+    display: inline-block;
+    padding: 2px;
+    min-width: 15px;
+    min-height: 15px;
+    position: absolute;
+    top: -9px;
+    right: -10px;
 }
 .header-basket-wrapper{
     display: flex;
