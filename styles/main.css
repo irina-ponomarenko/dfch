@@ -2651,6 +2651,7 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
     padding: 0 10px;
     outline: none;
     margin-bottom: 10px;
+    border: 1px solid #ccc;
 }
 .sale-btn{
     width: 100%;
@@ -2960,6 +2961,12 @@ article, aside, details, figcaption, figure, footer, header, main, menu, nav, se
 .top-header-mobile{
     display: none;
 }
-.mobile-btn-menu{
+.mobile-btn-menu,
+.mobile-catalog,
+.catalog-menu-mobile{
+    display: none;
+}
+.filter-mobile,
+.bayers-footer-list{
     display: none;
 }

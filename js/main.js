@@ -1,7 +1,7 @@
 $(document).ready(function () {
-    $('.jcarousel').jcarouselAutoscroll({
-        target: '+=1'
-    });
+    // $('.jcarousel').jcarouselAutoscroll({
+    //     target: '+=1'
+    // });
     /*-----------------counter------------------*/
 
     $('.to-bottom').on('click', function () {
@@ -43,6 +43,13 @@ $(document).ready(function () {
 
     $('.header-input-block').on('click',function () {
        $(this).closest('.item-filters').find('.list-filters-input').slideToggle('fast');
+    });
+
+    /*---------bayer-menu---------*/
+
+    $(".title-menu-bayer").on('click', function () {
+        $(this).closest('.left-menu-return').find('.bayer-list').slideToggle(500);
+
     });
 
     /*-------------click link sort---------------*/
@@ -118,6 +125,22 @@ $(document).ready(function () {
            });
 
         });
+
+        $('.mobile-catalog').on('click', function () {
+           $(this).closest("body").toggleClass("active-catalog");
+           $(this).closest(".content-all").find(".catalog-menu-mobile").slideToggle(500);
+        });
     }
+
+     if ( $(window).width() < 719 ) {
+        $('.list-catalog-sort').removeClass('display-inline');
+        $('.container-card').removeClass('sort-block-li');
+         $(".list-button").on('click', function () {
+        $(this).closest('.wrapper-sort-catalog').find('.square-button').removeClass('active-btn-list');
+        $(this).addClass('active-btn-list');
+        $(this).closest('.wrapper-sort-catalog').find('.list-catalog-sort').removeClass('display-inline');
+        $(this).closest('.wrapper-sort-catalog').find('.container-card').removeClass('sort-block-li');
+    });
+     }
 
 });
